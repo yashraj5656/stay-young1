@@ -39,12 +39,12 @@ const products = [
   },
   {
     id: 5,
-    name: "Java Burn",
+    name: "NeuroPrime",
     description:
-      "The world’s first and only natural proprietary, patent-pending formula, that when combined with coffee, can increase both the speed and efficiency of metabolism.",
-    price: "$79",
-    link: "https://c061bp0ah8qj4s35mqo63k1t90.hop.clickbank.net",
-    image: "/javaburn.png",
+    "NeuroPrime is like nothing you've ever tried before... it's based off a closely guarded formula that's said to be able to help support memory function.",
+    price: "$49",
+    link: "https://3d2c2h-fteqnzs2gmh6n-erdul.hop.clickbank.net",
+    image: "/neuro.png",
   },
   {
     id: 6,
@@ -84,12 +84,12 @@ const products = [
   },
   {
     id: 10,
-    name: "Liv Pure",
+    name: "Arctic Blast",
     description:
-      "It is the only product in the world containing our proprietary Liver Purification and Liver Fat-Burning Complex, each a unique blend of mediterranean plants and super nutrients designed to rapidly optimize liver function.",
-    price: "$49",
-    link: "https://df16bv-evcxn0qahyf-r3c4ue0.hop.clickbank.net",
-    image: "/liv.png",
+      "Arctic Blast™ is a unique cooling formula that is backed by science to provide temporary relief for occasional aches and discomfort.",
+    price: "$33",
+    link: "https://ce76drwembok-ib61-vho99x2m.hop.clickbank.net",
+    image: "/arc.png",
   },
 ];
 
