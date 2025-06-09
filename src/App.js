@@ -46,6 +46,33 @@ const products = [
     link: "https://c061bp0ah8qj4s35mqo63k1t90.hop.clickbank.net",
     image: "/javaburn.png",
   },
+  {
+    id: 6,
+    name: "Gluco6",
+    description:
+      "Our breakthrough formula combines cutting-edge science with natural ingredients to optimize glucose control and boost your metabolism.",
+    price: "$49",
+    link: "https://de596v2jvbuoal1fxqscgybq7a.hop.clickbank.net",
+    image: "/gluco6.png",
+  },
+  {
+    id: 7,
+    name: "Pineal Guardian",
+    description:
+      "With it's unique blend of extremely hard to source ingredients, Pineal Guardian helps potentially support memory function and overall brain health.",
+    price: "$39",
+    link: "https://97833rxcifxjxnemhdpg3bqr44.hop.clickbank.net",
+    image: "/pineal.png",
+  },
+  {
+    id: 8,
+    name: "Nagano Tonic",
+    description:
+      "When you combine these exotic nutrients in perfect harmony, you’ll enjoy the exhilarating effect of a turbo-charged metabolism, healthy fat loss, boundless energy, and feeling younger all over.",
+    price: "$39",
+    link: "https://70212g0imat96se9cqp8v16p6o.hop.clickbank.net",
+    image: "/nagano.png",
+  },
 ];
 
 export default function StayYoungStore() {
