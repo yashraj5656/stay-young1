@@ -33,9 +33,18 @@ const products = [
     name: "Joint Genesis",
     description:
       "Joint Genesis™ is a brand-new, doctor-formulated joint health supplement born out of Ivy League research, and backed by real-world results.",
-    price: "$49",
+    price: "$59",
     link: "https://4a787qwkq8qn2p3epfulv5qsd6.hop.clickbank.net",
     image: "/joint.png",
+  },
+  {
+    id: 5,
+    name: "Java Burn",
+    description:
+      "The world’s first and only natural proprietary, patent-pending formula, that when combined with coffee, can increase both the speed and efficiency of metabolism.",
+    price: "$79",
+    link: "https://c061bp0ah8qj4s35mqo63k1t90.hop.clickbank.net",
+    image: "/javaburn.png",
   },
 ];
 
