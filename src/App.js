@@ -28,6 +28,15 @@ const products = [
     link: "https://3b1bcnsdj9rg9f5e6hoeuj4kb1.hop.clickbank.net",
     image: "/quientumplus.png",
   },
+  {
+    id: 4,
+    name: "Joint Genesis",
+    description:
+      "Joint Genesis™ is a brand-new, doctor-formulated joint health supplement born out of Ivy League research, and backed by real-world results.",
+    price: "$49",
+    link: "https://4a787qwkq8qn2p3epfulv5qsd6.hop.clickbank.net",
+    image: "/joint.png",
+  },
 ];
 
 export default function StayYoungStore() {
