@@ -111,6 +111,7 @@ export default function StayYoungStore() {
 
       <header style={{ backgroundColor: "#f3f3f3", padding: "0.5rem 2rem", borderBottom: "1px solid #ccc" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <img src="/sy.png" alt="Stay Young " style={{ width: "80px", height: "80px", marginRight: "0.5rem" }} />
           <h1 style={{ color: "#28a745" }}>Stay Young</h1>
           <nav>
             <a href="#products" style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}>Products</a>
