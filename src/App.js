@@ -73,6 +73,24 @@ const products = [
     link: "https://70212g0imat96se9cqp8v16p6o.hop.clickbank.net",
     image: "/nagano.png",
   },
+  {
+    id: 9,
+    name: "iGenics",
+    description:
+      "iGenics is designed to support clearer vision by maintaining a healthy inflammatory response.",
+    price: "$39",
+    link: "https://afa29mq9j9wj-hclr6hfhdr6qw.hop.clickbank.net",
+    image: "/igenics.png",
+  },
+  {
+    id: 10,
+    name: "Liv Pure",
+    description:
+      "It is the only product in the world containing our proprietary Liver Purification and Liver Fat-Burning Complex, each a unique blend of mediterranean plants and super nutrients designed to rapidly optimize liver function.",
+    price: "$49",
+    link: "https://df16bv-evcxn0qahyf-r3c4ue0.hop.clickbank.net",
+    image: "/liv.png",
+  },
 ];
 
 export default function StayYoungStore() {
