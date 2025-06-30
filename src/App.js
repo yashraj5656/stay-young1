@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 const products = [
   {
@@ -41,7 +42,7 @@ const products = [
     id: 5,
     name: "NeuroPrime",
     description:
-    "NeuroPrime is like nothing you've ever tried before... it's based off a closely guarded formula that's said to be able to help support memory function.",
+      "NeuroPrime is like nothing you've ever tried before... it's based off a closely guarded formula that's said to be able to help support memory function.",
     price: "$49",
     link: "https://3d2c2h-fteqnzs2gmh6n-erdul.hop.clickbank.net",
     image: "/neuro.png",
@@ -59,7 +60,7 @@ const products = [
     id: 7,
     name: "Pineal Guardian",
     description:
-      "With it's unique blend of extremely hard to source ingredients, Pineal Guardian helps potentially support memory function and overall brain health.",
+      "With its unique blend of extremely hard to source ingredients, Pineal Guardian helps potentially support memory function and overall brain health.",
     price: "$39",
     link: "https://97833rxcifxjxnemhdpg3bqr44.hop.clickbank.net",
     image: "/pineal.png",
@@ -93,55 +94,55 @@ const products = [
   },
 ];
 
-export default function StayYoungStore() {
+export default function App() {
   return (
     <>
-      <head>
-        <title>Stay Young - Health Supplements Store</title>
-        <meta
-          name="description"
-          content="Shop premium health supplements for vitality, energy, and wellness."
-        />
-        <meta
-          name="keywords"
-          content="Health Supplements, Nutrition, Vitality, Wellness, Stay Young"
-        />
-        <meta name="author" content="Stay Young" />
-      </head>
-
-      <header style={{ backgroundColor: "#f3f3f3", padding: "0.5rem 2rem", borderBottom: "1px solid #ccc" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <h1 style={{ color: "#28a745" }}>Stay Young</h1>
-          <nav>
-            <a href="#products" style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}>Products</a>
-            <a href="#about" style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}>About</a>
-            <a href="#contact" style={{ margin: "0 1rem", color: "#333", textDecoration: "none" }}>Contact</a>
+      <header className="header">
+        <div className="header-container">
+          <h1 className="logo">Stay Young</h1>
+          <nav className="nav-links">
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
           </nav>
         </div>
       </header>
 
-      <section style={{ backgroundImage: 'url("/banner.jpg")', backgroundSize: "cover", backgroundPosition: "center", padding: "4rem 2rem", color: "white", textAlign: "center" }}>
-        <h2 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>FRESH SUPPLEMENTS</h2>
-        <p style={{ fontSize: "1.2rem", marginBottom: "2rem" }}>Premium wellness products to keep you young, energized and healthy.</p>
-        <a href="#products" style={{ padding: "0.75rem 2rem", backgroundColor: "#28a745", color: "white", textDecoration: "none", borderRadius: "5px" }}>Shop Now</a>
+      <section className="hero-section">
+        <div className="hero-content">
+          <h2>FRESH SUPPLEMENTS</h2>
+          <p>
+            Premium wellness products to keep you young, energized and healthy.
+          </p>
+          <a href="#products" className="shop-btn">
+            Shop Now
+          </a>
+        </div>
       </section>
 
-      <main style={{ padding: "2rem", backgroundColor: "#f9f9f9" }}>
-        <h2 id="products" style={{ textAlign: "center", margin: "2rem 0", color: "#28a745" }}>Our Supplements</h2>
-
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem" }}>
+      <main className="main-content">
+        <h2 id="products" className="section-heading">
+          Our Supplements
+        </h2>
+        <div className="products-grid">
           {products.map((product) => (
-            <div key={product.id} style={{ backgroundColor: "white", borderRadius: "10px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", overflow: "hidden" }}>
-              <img src={product.image} alt={product.name} style={{ width: "100%", height: "200px", objectFit: "cover" }} />
-              <div style={{ padding: "1rem" }}>
-                <h3 style={{ color: "#28a745" }}>{product.name}</h3>
-                <p style={{ color: "#555" }}>{product.description}</p>
+            <div key={product.id} className="product-card">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="product-image"
+              />
+              <div className="product-info">
+                <h3>{product.name}</h3>
+                <p>{product.description}</p>
                 <strong>{product.price}</strong>
-                <div style={{ marginTop: "1rem" }}>
-                  <a href={product.link} target="_blank" rel="noopener noreferrer">
-                    <button style={{ padding: "0.5rem 1rem", backgroundColor: "#28a745", color: "white", border: "none", borderRadius: "5px", cursor: "pointer" }}>
-                      Buy Now
-                    </button>
+                <div className="button-container">
+                  <a
+                    href={product.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="buy-button">Buy Now</button>
                   </a>
                 </div>
               </div>
@@ -150,25 +151,49 @@ export default function StayYoungStore() {
         </div>
       </main>
 
-      <section id="about" style={{ backgroundColor: "#fff", padding: "2rem" }}>
-        <h2 style={{ color: "#28a745" }}>About Stay Young</h2>
-        <p style={{ color: "#333", maxWidth: "800px", margin: "auto" }}>
-        At Stay Young, we believe that true health is the foundation of a long, vibrant life. Our carefully curated collection of premium health supplements is designed to support your body's natural vitality, helping you feel energetic, strong, and youthful every day.
-
-We understand that maintaining wellness is not just about temporary solutions—it's about adopting a lifestyle that nurtures your body, mind, and spirit. That’s why we bring you a thoughtfully selected range of supplements crafted with premium, scientifically-backed ingredients. From enhancing immune function to promoting cellular health, each formula is designed to work in harmony with your body’s natural processes, ensuring long-term vitality and resilience.
-
-At Stay Young, we don’t just offer supplements—we offer a commitment to your well-being. Whether you’re looking for extra support in your daily routine or aiming to optimize your health for years to come, our products empower you to embrace life with strength, energy, and confidence. Because when you prioritize wellness, every moment becomes an opportunity to live fully, feel youthful, and stay vibrant—naturally.
-            </p>
+      <section id="about" className="about-section">
+        <div className="section-container">
+          <h2>About Stay Young</h2><br></br>
+          <p>
+            At Stay Young, we believe that true health is the foundation of a
+            long, vibrant life. Our carefully curated collection of premium
+            health supplements is designed to support your body's natural
+            vitality, helping you feel energetic, strong, and youthful every
+            day.
+          </p>
+          <p>
+            We understand that maintaining wellness is not just about temporary
+            solutions—it's about adopting a lifestyle that nurtures your body,
+            mind, and spirit. That’s why we bring you a thoughtfully selected
+            range of supplements crafted with premium, scientifically-backed
+            ingredients. From enhancing immune function to promoting cellular
+            health, each formula is designed to work in harmony with your
+            body’s natural processes, ensuring long-term vitality and
+            resilience.
+          </p>
+          <p>
+            At Stay Young, we don’t just offer supplements—we offer a
+            commitment to your well-being. Whether you’re looking for extra
+            support in your daily routine or aiming to optimize your health for
+            years to come, our products empower you to embrace life with
+            strength, energy, and confidence. Because when you prioritize
+            wellness, every moment becomes an opportunity to live fully, feel
+            youthful, and stay vibrant—naturally.
+          </p>
+        </div>
       </section>
 
-      <section id="contact" style={{ backgroundColor: "#f3f3f3", padding: "2rem" }}>
-        <h2 style={{ color: "#28a745" }}>Contact Us</h2>
-        <p style={{ color: "#333", textAlign: "center" }}>
-          Have questions or feedback? Email us at <a href="mailto:info@stayyoung.com" style={{ color: "#28a745" }}>info@stayyoung.com</a>
-        </p>
+      <section id="contact" className="contact-section">
+        <div className="section-container">
+          <h2>Contact Us</h2><br></br>
+          <p>
+            Have questions or feedback? Email us at{" "}
+            <a href="mailto:info@stayyoung.com">info@stayyoung.com</a>
+          </p>
+        </div>
       </section>
 
-      <footer style={{ backgroundColor: "#0f0f0f", color: "white", padding: "1rem", textAlign: "center" }}>
+      <footer className="footer">
         <p>&copy; {new Date().getFullYear()} Stay Young. All rights reserved.</p>
       </footer>
     </>
