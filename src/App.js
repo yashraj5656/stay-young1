@@ -6,7 +6,7 @@ const products = [
     id: 1,
     name: "MITOLYN",
     description:
-      "It is one of the only product in the world with a proprietary blend of 6 exotic nutrients and plants designed to support healthy mitochondria levels!",
+      "It is one of the only products in the world with a proprietary blend of 6 exotic nutrients and plants designed to support healthy mitochondria levels!",
     price: "$79",
     link: "https://34b65l-jlhwi2hcdskxc8b7m0h.hop.clickbank.net",
     image: "/mitolyn.png",
@@ -24,7 +24,7 @@ const products = [
     id: 3,
     name: "Quietum Plus",
     description:
-      "A bespoke proprietary formula that includes 18 special high-quality plant extracts that are specially created to support a healthy hearing",
+      "A bespoke proprietary formula with 18 premium plant extracts created to support healthy hearing.",
     price: "$49",
     link: "https://3b1bcnsdj9rg9f5e6hoeuj4kb1.hop.clickbank.net",
     image: "/quientumplus.png",
@@ -33,7 +33,7 @@ const products = [
     id: 4,
     name: "Joint Genesis",
     description:
-      "Joint Genesis™ is a brand-new, doctor-formulated joint health supplement born out of Ivy League research, and backed by real-world results.",
+      "Doctor-formulated joint health supplement based on Ivy League research and real-world results.",
     price: "$59",
     link: "https://4a787qwkq8qn2p3epfulv5qsd6.hop.clickbank.net",
     image: "/joint.png",
@@ -42,7 +42,7 @@ const products = [
     id: 5,
     name: "NeuroPrime",
     description:
-      "NeuroPrime is like nothing you've ever tried before... it's based off a closely guarded formula that's said to be able to help support memory function.",
+      "NeuroPrime is designed to help support focus, memory, and overall brain function using advanced ingredients.",
     price: "$49",
     link: "https://3d2c2h-fteqnzs2gmh6n-erdul.hop.clickbank.net",
     image: "/neuro.png",
@@ -51,7 +51,7 @@ const products = [
     id: 6,
     name: "Gluco6",
     description:
-      "Our breakthrough formula combines cutting-edge science with natural ingredients to optimize glucose control and boost your metabolism.",
+      "This breakthrough formula uses natural ingredients to help optimize glucose control and metabolic energy.",
     price: "$49",
     link: "https://de596v2jvbuoal1fxqscgybq7a.hop.clickbank.net",
     image: "/gluco6.png",
@@ -60,7 +60,7 @@ const products = [
     id: 7,
     name: "Pineal Guardian",
     description:
-      "With its unique blend of extremely hard to source ingredients, Pineal Guardian helps potentially support memory function and overall brain health.",
+      "A blend of rare ingredients supporting memory, clarity, and overall brain wellness.",
     price: "$39",
     link: "https://97833rxcifxjxnemhdpg3bqr44.hop.clickbank.net",
     image: "/pineal.png",
@@ -69,7 +69,7 @@ const products = [
     id: 8,
     name: "Nagano Tonic",
     description:
-      "When you combine these exotic nutrients in perfect harmony, you’ll enjoy the exhilarating effect of a turbo-charged metabolism, healthy fat loss, boundless energy, and feeling younger all over.",
+      "A unique mix of exotic nutrients to supercharge metabolism, energy, and youthfulness.",
     price: "$39",
     link: "https://70212g0imat96se9cqp8v16p6o.hop.clickbank.net",
     image: "/nagano.png",
@@ -78,7 +78,7 @@ const products = [
     id: 9,
     name: "iGenics",
     description:
-      "iGenics is designed to support clearer vision by maintaining a healthy inflammatory response.",
+      "Formulated to support clearer vision and a healthy inflammatory response for your eyes.",
     price: "$39",
     link: "https://afa29mq9j9wj-hclr6hfhdr6qw.hop.clickbank.net",
     image: "/igenics.png",
@@ -87,7 +87,7 @@ const products = [
     id: 10,
     name: "Arctic Blast",
     description:
-      "Arctic Blast™ is a unique cooling formula that is backed by science to provide temporary relief for occasional aches and discomfort.",
+      "Cooling relief for occasional joint and muscle discomfort — science-backed, fast-acting formula.",
     price: "$33",
     link: "https://ce76drwembok-ib61-vho99x2m.hop.clickbank.net",
     image: "/arc.png",
@@ -110,19 +110,19 @@ export default function App() {
 
       <section className="hero-section">
         <div className="hero-content">
-          <h2>FRESH SUPPLEMENTS</h2>
+          <h2>Feel Younger, Live Stronger</h2>
           <p>
-            Premium wellness products to keep you young, energized and healthy.
+            Science-backed wellness to boost your energy, clarity, and confidence — naturally.
           </p>
           <a href="#products" className="shop-btn">
-            Shop Now
+            Explore Supplements
           </a>
         </div>
       </section>
 
       <main className="main-content">
         <h2 id="products" className="section-heading">
-          Our Supplements
+          Curated Supplements For Total Wellness
         </h2>
         <div className="products-grid">
           {products.map((product) => (
@@ -135,6 +135,12 @@ export default function App() {
               <div className="product-info">
                 <h3>{product.name}</h3>
                 <p>{product.description}</p>
+                <div className="product-tags">
+                  {product.name.includes("Joint") && <span className="tag">🦴 Joint Support</span>}
+                  {product.name.includes("Neuro") && <span className="tag">🧠 Brain Boost</span>}
+                  {product.name.includes("iGenics") && <span className="tag">👁️ Vision</span>}
+                  {product.name.includes("ProDentim") && <span className="tag">🦷 Dental Health</span>}
+                </div>
                 <strong>{product.price}</strong>
                 <div className="button-container">
                   <a
@@ -153,42 +159,24 @@ export default function App() {
 
       <section id="about" className="about-section">
         <div className="section-container">
-          <h2>About Stay Young</h2><br></br>
+          <h2>Why Choose Stay Young?</h2>
           <p>
-            At Stay Young, we believe that true health is the foundation of a
-            long, vibrant life. Our carefully curated collection of premium
-            health supplements is designed to support your body's natural
-            vitality, helping you feel energetic, strong, and youthful every
-            day.
+            We’re not just another supplement site. We only recommend formulas backed by science, trusted by users, and aligned with long-term vitality goals.
           </p>
-          <p>
-            We understand that maintaining wellness is not just about temporary
-            solutions—it's about adopting a lifestyle that nurtures your body,
-            mind, and spirit. That’s why we bring you a thoughtfully selected
-            range of supplements crafted with premium, scientifically-backed
-            ingredients. From enhancing immune function to promoting cellular
-            health, each formula is designed to work in harmony with your
-            body’s natural processes, ensuring long-term vitality and
-            resilience.
-          </p>
-          <p>
-            At Stay Young, we don’t just offer supplements—we offer a
-            commitment to your well-being. Whether you’re looking for extra
-            support in your daily routine or aiming to optimize your health for
-            years to come, our products empower you to embrace life with
-            strength, energy, and confidence. Because when you prioritize
-            wellness, every moment becomes an opportunity to live fully, feel
-            youthful, and stay vibrant—naturally.
-          </p>
+          <ul className="about-highlights">
+            <li>✔️ 100% Affiliate Transparency</li>
+            <li>✔️ Carefully Reviewed Health Brands</li>
+            <li>✔️ Designed for 30+ Adults Who Want More Energy, Focus & Mobility</li>
+          </ul>
         </div>
       </section>
 
       <section id="contact" className="contact-section">
         <div className="section-container">
-          <h2>Contact Us</h2><br></br>
+          <h2>Let’s Talk Wellness</h2>
           <p>
-            Have questions or feedback? Email us at{" "}
-            <a href="mailto:info@stayyoung.com">info@stayyoung.com</a>
+            Questions, suggestions, or feedback? Email us at <a href="mailto:info@stayyoung.com">info@stayyoung.com</a> <br />
+            Follow our updates & stories on Instagram @stayyounghealth
           </p>
         </div>
       </section>
