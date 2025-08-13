@@ -109,16 +109,22 @@ export default function App() {
       </header>
 
       <section className="hero-section">
-        <div className="hero-content">
-          <h2>Feel Younger, Live Stronger</h2>
-          <p>
-            Science-backed wellness to boost your energy, clarity, and confidence — naturally.
-          </p>
-          <a href="#products" className="shop-btn">
-            Explore Supplements
-          </a>
-        </div>
-      </section>
+  <div className="hero-container">
+    <div className="hero-text">
+      <h2>Feel Younger, Live Stronger</h2>
+      <p>
+        Science-backed wellness to boost your energy, clarity, and confidence — naturally.
+      </p>
+      <a href="#products" className="shop-btn">
+        Explore Supplements
+      </a>
+    </div>
+    <div className="hero-image">
+      <img src="/syh.jpg" alt="Supplements" />
+    </div>
+  </div>
+</section>
+
 
       <main className="main-content">
         <h2 id="products" className="section-heading">
